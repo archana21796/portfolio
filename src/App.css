@@ -1,38 +1,353 @@
-.App {
-  text-align: center;
+@media screen and (max-width: 800px){
+  .styleNavigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  .styleLink > button{
+    margin: 0;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .logoStyle{
+    margin-top: 10px;
+  }
+  .styleHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+  }
+  .styleHomeContent > h2{
+    font-size: 18px;
+  }
+  .styleHomeContent > h1{
+    font-size: 20px;
+  }
+  .styleHomeContent > h3{
+    font-size: 18px;
+  }
+  .homeImgContainer{
+    margin-top: 20px;
+    width: 250px;
+    align-self: center;
+    height: 250px;
+    background-image: url("./homeimg.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .styleAboutContent{
+    font-size: 14px;
+    line-height: 35px;
+  }
+  .styleAboutContent > h2{
+    font-size: 28px;
+    color: #e12c5b;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .styleProff{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  #example #progress{
+    display: none !important;
+  }
+  #example div{
+    display: block !important;
+  }
+  .skillChart{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  
+  }
+  .styleprojects{
+    font-size: 18px;
+  }
+  .styleAboutSection,.styleProject{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .styleCardHolder{
+    width: 90% !important;
+  }
+  [class^="card-container-"] {
+    width: 90% !important;
+  }
+  .card{
+    height: 300px !important;
+  }
+  .styleContactContainer{
+    display: block !important;
+  }
+  .styleContactBtn{
+    width: 90% !important;
+  }
+  .styleContactBtn > a > button > span{
+    font-size: 15px !important;
+  }
+  .styleContactImg{
+    margin-left: 50px !important;
+    width: 70% !important;
+    height: 400px !important;
+  }
 }
+@media screen and (min-width: 801px){
+  .styleNavigation{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  }
+  .styleLink > button{
+    padding-top: 20px;
+    margin:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  .logoStyle{
+    margin-top: 0;
+    margin-right:30px ;
+  }
+  .styleHome{
+    height: 100vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  .styleHomeContent > h2{
+    font-size: 38px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.styleHomeContent > h1{
+  font-size: 42px;
+}
+.styleHomeContent > h3{
+  font-size: 30px;
+}
+  .homeImgContainer{
+    margin-top: 20px;
+    width: 550px;
+    align-self: center;
+    height: 500px;
+    background-image: url("./homeimg.jpeg");
+    border-radius: 10px;
+  }
+  .styleAboutContent{
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .styleAboutContent > h2{
+    font-size: 38px;
+    color: #e12c5b;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .styleProff{
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .skillChart{
+    padding: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  
+  }
+  .styleAboutSection,.styleProject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .styleAboutContent{
+    width: 50%;
+    padding: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.styleHeader{
+  align-self: center;
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 5px;
+}
+.styleHeaderSpan{
+  color: #e12c5b;
+}
+.styleLink > button{
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: linear-gradient(to right, #e12c5b 100%, transparent 0%);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.styleLink >button:hover{
+  color: #e12c5b;
+  background-size: 100% 2px;
+}
+.logoStyle{
+  width: 55px;
+  margin-top: 10px;
+  height: 55px;
+  border-radius: 50%;
+  background-image: url("./logoimg.png");
+  background-position: center;
+  background-size: contain;
+}
+.styleHomeContent{
+  width: 30%;
+}
+
+.styleHomeIcons{
+  display: flex;
+  font-size: 20px;
+}
+.styleHomeIcons > div > a{
+  color: #e12c5b;
+}
+.styleHomeIcons > div {
+  margin: 10px;
+  border: 2px solid #e12c5b;
+  border-radius: 50%;
+  padding: 10px;
+}
+.styleSkillButton{
+    margin:10px;
+    padding: 10px;
+    background-color: #e12c5b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+.styleProject {
+  background-image: url('./projectbg1.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.styleContactContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.styleContactHead{
+  text-align: center;
+  font-size: 35px;
+  color: #e12c5b;
+}
+.styleContactBtn{
+  display: flex;
+  flex-direction: column;
+}
+.styleContactBtn >a > button > img{
+  width: 60px;
+  height: 60px;
+}
+.styleContactBtn  > a > button{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.styleContactBtn  > a > button > span{
+      padding: 10px;
+}
+
+.styleContactBtn  > a > button:hover{
+    color: #e12c5b;
+}
+.email{
+  background-color: #f9d4d8;
+}
+.phone{
+  background-color: #e0edf7;
+}
+.styleContactImg{
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  background-image: url('./contactimg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+.styleFooter{
+  background-color: black;
   color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume{
+  background-color: #d1fbf0 !important;
 }
