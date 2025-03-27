@@ -132,6 +132,8 @@ const links = [
   { logo: process.env.PUBLIC_URL + "/images/project1.png", link: "https://todolist-nu-liard.vercel.app/", hueA: 340, hueB: 10 },
   { logo: process.env.PUBLIC_URL + "/images/project2.png", link: "https://colorcoder-nine.vercel.app/", hueA: 20, hueB: 40 },
   { logo: process.env.PUBLIC_URL + "/images/project3.png", link: "https://apiaccessapp.vercel.app/", hueA: 60, hueB: 90 },
+  { logo: process.env.PUBLIC_URL + "/images/project4.png", link: "https://social-app-mu-lilac.vercel.app/", hueA: 60, hueB: 90 },
+
 ];
 
 export default React.memo(Projects);
